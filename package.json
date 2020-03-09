@@ -22,8 +22,7 @@
     "nodejs-redistool"
   ],
   "files": [
-    "lib",
-    "index.js"
+    "lib"
   ],
   "dependencies": {
     "redis": "^2.6.2",
