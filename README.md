@@ -1,9 +1,9 @@
-# nodejs-redismq
-> modejs redis mq
+# nodejs-redistool
+> modejs redis tool
 
 ## Install
 ```
-> npm install nodejs-redismq --save-dev
+> npm install nodejs-redistool --save-dev
 ```
 
 ## Usage
@@ -11,14 +11,19 @@
 ### app.js
 ```js
 // app.js
-const redismq = require('nodejs-redismq');
-const channel = "mq:key";
+const { init, mq } = require('nodejs-redistool');
+const topic = "mq:key";
 // config redis mq
-redismq.config(redis);
+init({
+    host: "127.0.0.1",
+    password: "pass",
+    port: 6379,
+    db: 2
+});
 // sub message
-redismq.sub(channel, (msg) => {
+mq.sub(topic, (msg) => {
     // handle msg
 });
 // pub message
-redismq.pub(channel, ...msgs);
+mq.pub(topic, ...msgs);
 ```

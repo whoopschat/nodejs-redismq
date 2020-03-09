@@ -1,19 +1,19 @@
 {
-  "name": "nodejs-redismq",
+  "name": "nodejs-redistool",
   "version": "1.0.0",
-  "description": "nodejs redis mq",
+  "description": "nodejs redis tool",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/whoopschat/nodejs-redismq.git"
+    "url": "git+https://github.com/whoopschat/nodejs-redistool.git"
   },
   "author": "liangmayong",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/whoopschat/nodejs-redismq/issues"
+    "url": "https://github.com/whoopschat/nodejs-redistool/issues"
   },
   "engines": {
     "node": ">= 0.10"
@@ -25,6 +25,7 @@
     "index.js"
   ],
   "dependencies": {
+    "redis": "^2.6.2",
     "node-schedule": "1.3.0",
     "jsutil-toany": "1.1.0"
   },
