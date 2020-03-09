@@ -19,7 +19,7 @@
     "node": ">= 0.10"
   },
   "keywords": [
-    "nodejs-redismq"
+    "nodejs-redistool"
   ],
   "files": [
     "index.js"
