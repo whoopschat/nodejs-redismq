@@ -23,7 +23,7 @@ init({
 // sub message
 mq.sub(topic, (msg) => {
     // handle msg
-});
+}, "*/2 * * * * *");
 // pub message
 mq.pub(topic, ...msgs);
 ```
